@@ -1,0 +1,62 @@
+.store-layout {
+  background-image: url("../../styles/media/bg.png");
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.store-filter {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  background-color: black;
+  opacity: 0.9;
+  width: 100%;
+  padding: 10px;
+}
+
+.store-filter-option,
+.store-filter-option > a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #171717;
+  margin: 10px auto;
+}
+
+.store-filter-sub-options,
+.store-filter-sub-options a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: end;
+  color: white;
+}
+
+.store-items {
+  flex: 2;
+  flex-direction: row;
+  /* background-color: black; */
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 1050px;
+  overflow-y: scroll;
+}
+
+.store-items > div {
+  width: 400px;
+  height: 500px;
+  background-color: red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

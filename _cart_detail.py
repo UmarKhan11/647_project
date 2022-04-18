@@ -1,0 +1,33 @@
+from bs4 import BeautifulSoup
+from numpy import r_
+import requests
+
+# SQL SNIPPETS
+"""
+
+CREATE TABLE CART_DETAIL
+(
+CART_DETAIL_ID INT PRIMARY KEY UNIQUE,
+CART_ID INT,
+FOREIGN KEY (CART_ID) REFERENCES CART(CART_ID),
+PRODUCT_ID INT,
+FOREIGN KEY (PRODUCT_ID) REFERENCES PRODUCT(PRODUCT_ID),
+QUANTITY INT,
+PRICE INT
+);
+
+
+"""
+
+"""
+INSERT INTO PRODUCT
+VALUES (<VALUES>, ...)
+"""
+
+"""
+DROP TABLE PRODUCT
+"""
+
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+}
